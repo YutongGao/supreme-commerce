@@ -1,0 +1,60 @@
+LI {
+	font: 13px Arial, Helvetica, sans-serif;
+}
+
+.policies {
+	text-align: center;
+	font-color: #3c3c3c;
+	font-family: Arial;
+	font-size: 8px;
+}
+
+.srchbox {
+	FONT: 11px Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	COLOR: black;
+}
+
+.featured_image img {
+	width: 33%;
+}
+
+.rec-h2 {
+	color: #646464;
+	font-weight: bold;
+	font-size: 1.2em;
+	padding-left: 5px;
+}
+
+.rec-main {
+	zoom: 1;
+	border: 1px solid #ccc;
+	width: 31.0%;
+	float: left;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 4px;
+	color: #336699;
+	text-align: center;
+}
+
+.rec-product {
+	zoom: 1;
+	float: right;
+	width: 170px;
+	margin-right: 0;
+}
+
+.rec-link {
+	color: #646464 !important;
+	text-decoration: none;
+}
+
+.prepend-10 {
+	padding-left: 25px;
+}

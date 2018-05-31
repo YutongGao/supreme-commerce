@@ -1,0 +1,1282 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="/">
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style type="text/css" id="monetatecss">
+    .mpg-image {
+      width: 46%;
+      float: left;
+    }
+
+    .mpg-text {
+      float: right;
+    }
+
+    .mpg-item {
+      zoom: 1;
+      float: left;
+      padding-left: 10px;
+      padding-top: 5px;
+      padding-right: 10px;
+      padding-bottom: 5px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      color: #336699;
+      text-align: center;
+      text-decoration: none !important;
+      height: 145px;
+    }
+
+    .clear-item-div {
+      clear: both;
+      line-height: 0px;
+      height: 0px;
+      overflow: hidden;
+    }
+
+    .mpg-name {
+      color: #003399;
+      text-decoration: none !important;
+      font-size: .85em;
+      vertical-align: baseline;
+      display: block;
+      min-height: 48px;
+    }
+
+    .mpg-reviews {
+      font-size: .9em;
+      color: #003399;
+    }
+
+    .mpg-price {
+      color: #cc0000;
+      text-decoration: none !important;
+      font-weight: bold;
+      font-size: 1.1em;
+      display: block;
+    }
+
+    .mpg-alternate-price {
+      color: #336699 !important;
+      text-decoration: none !important;
+      font-weight: bold;
+      font-size: .9em;
+      display: block;
+    }
+
+    .mpg-page a {
+      text-decoration: none !important;
+    }
+
+    .rec-main {
+      display: none !important;
+    }
+
+    .rec-main-homepage {
+      display: none !important;
+    }
+
+    .rec-main-cart {
+      display: none !important;
+    }
+
+    .monetate-endcap .mpg-item {
+      -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+      -moz-box-sizing: border-box; /* Firefox, other Gecko */
+      box-sizing: border-box; /* Opera/IE 8+ */
+      height: 100% !important;
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      margin-left: 5px !important;
+      margin-right: 5px !important;
+    }
+
+    .monetate-endcap .mpg-item-link {
+      zoom: 1;
+      display: block;
+      border: 1px solid #ccc;
+      color: #336699;
+      text-align: center;
+      text-decoration: none !important;
+      height: 91% !important;
+      padding-left: 10px !important;
+      padding-top: 5px !important;
+      padding-right: 10px !important;
+      padding-bottom: 5px !important;
+      margin-bottom: 5px !important;
+    }
+
+    .monetate-endcap .mpg-text {
+      width: 50%;
+      max-width: 95px;
+    }
+
+    .monetate-endcap .mpg-stars img {
+      width: 100%;
+      max-width: 95px;
+    }
+
+    #back-button, #forward-button {
+      -webkit-user-select: none; /* Webkit */
+      -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* IE 10 */
+      -o-user-select: none;
+      user-select: none;
+    }
+
+    #monetate_endcap_7d1c89cd_0.monetate-endcap.outer {
+      overflow: hidden;
+      width: 1020px;
+      height: 311px;
+      -webkit-perspective: 1;
+    }
+
+    #monetate_endcap_7d1c89cd_0.monetate-endcap .cartridge {
+      position: absolute;
+    }
+
+    #monetate_endcap_7d1c89cd_0.monetate-endcap .item {
+      background-color: #FFF;
+      position: relative;
+      text-align: center;
+      vertical-align: top;
+    }
+
+    #monetate_endcap_7d1c89cd_0.monetate-endcap .item .image {
+      margin: auto auto;
+    }
+
+    #monetate_endcap_7d1c89cd_0.monetate-endcap .item .text {
+      font-weight: normal;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    #monetate_endcap_7d1c89cd_0.monetate-endcap .item .text .name {
+      font-weight: bold;
+    }
+
+    #monetate_endcap_7d1c89cd_0.monetate-endcap .item .text .alternate-price {
+      text-decoration: line-through;
+    }
+
+    .shadow.left.creative {
+      box-shadow: 3px 0px 5px #fff;
+    }
+
+    .shadow.right.creative {
+      box-shadow: -3px 0px 5px #fff;
+    }
+
+    #monetate_endcap_7d1c89cd_0.monetate-endcap.horizontal .cartridge {
+      width: 10000px;
+      height: 270px;
+      left: 31px;
+      top: 40px;
+    }
+
+    #monetate_endcap_7d1c89cd_0.monetate-endcap.horizontal .top {
+      position: absolute;
+      height: 40px;
+      width: 1020px;
+      background-image: url(https://sb.monetate.net/img/1/162/776364.png) !important;
+      background-repeat: no-repeat;
+      margin: auto;
+      left: 0px;
+      z-index: 1;
+    }
+
+    #monetate_endcap_7d1c89cd_0.monetate-endcap.horizontal .bottom {
+      height: 1px;
+      width: 1px;
+      background-image: url(https://sb.monetate.net/img/1/162/339351.png) !important;
+      background-repeat: no-repeat;
+      margin: auto;
+      position: absolute;
+      bottom: 0px;
+      left: 509.5px;
+      z-index: 1;
+    }
+
+    #monetate_endcap_7d1c89cd_0.monetate-endcap.horizontal .left {
+      width: 31px;
+      height: 270px;
+      left: 0px;
+      top: 40px;
+      position: absolute;
+      background-color: #FFF;
+      cursor: pointer;
+      z-index: 0;
+    }
+
+    #monetate_endcap_7d1c89cd_0.monetate-endcap.horizontal .left .inner {
+      position: absolute;
+      top: 53px;
+      left: 0px;
+      width: 31px;
+      height: 164px;
+      background-image: url(https://sb.monetate.net/img/1/162/236384.png) !important;
+      background-repeat: no-repeat;
+    }
+
+    #monetate_endcap_7d1c89cd_0.monetate-endcap.horizontal .right {
+      width: 31px;
+      height: 270px;
+      right: 0px;
+      top: 40px;
+      position: absolute;
+      background-color: #FFF;
+      cursor: pointer;
+      z-index: 0;
+    }
+
+    #monetate_endcap_7d1c89cd_0.monetate-endcap.horizontal .right .inner {
+      position: absolute;
+      top: 53px;
+      right: 0px;
+      width: 31px;
+      height: 164px;
+      background-image: url(https://sb.monetate.net/img/1/162/431606.png) !important;
+      background-repeat: no-repeat;
+    }
+
+    #monetate_endcap_7d1c89cd_0.monetate-endcap.horizontal .item {
+      display: block;
+      float: left;
+      padding: 5px 5px 5px 5px;
+      width: 182px;
+      height: 239px;
+    }
+
+    #monetate_endcap_7d1c89cd_0.monetate-endcap.horizontal .item .image {
+      max-width: 100%;
+      max-height: 194px;
+    }
+
+    #monetate_endcap_7d1c89cd_0.monetate-endcap.vertical .cartridge {
+      height: 10000px;
+      width: nullpx;
+      top: 31px;
+      left: 31px;
+    }
+
+    #monetate_endcap_7d1c89cd_0.monetate-endcap.vertical .top {
+      position: absolute;
+      left: 31px;
+      height: 31px;
+      width: nullpx;
+      background-color: #FFF;
+      margin: auto;
+      z-index: 0;
+      cursor: pointer;
+    }
+
+    #monetate_endcap_7d1c89cd_0.monetate-endcap.vertical .top .inner {
+      top: 0px;
+      margin: auto;
+      height: 40px;
+      width: 1020px;
+      background-image: url(https://sb.monetate.net/img/1/162/776364.png) !important;
+      background-repeat: no-repeat;
+    }
+
+    #monetate_endcap_7d1c89cd_0.monetate-endcap.vertical .bottom {
+      position: absolute;
+      bottom: 0px;
+      left: 31px;
+      height: 31px;
+      width: nullpx;
+      background-color: #FFF;
+      margin: auto;
+      z-index: 0;
+      cursor: pointer;
+    }
+
+    #monetate_endcap_7d1c89cd_0.monetate-endcap.vertical .bottom .inner {
+      bottom: 0px;
+      margin: auto;
+      height: 1px;
+      width: 1px;
+      background-image: url(https://sb.monetate.net/img/1/162/339351.png) !important;
+      background-repeat: no-repeat;
+    }
+
+    #monetate_endcap_7d1c89cd_0.monetate-endcap.vertical .left {
+      width: 31px;
+      height: 311px;
+      left: 0px;
+      top: 0px;
+      position: absolute;
+      background-color: #FFF;
+      z-index: 1;
+    }
+
+    #monetate_endcap_7d1c89cd_0.monetate-endcap.vertical .left .inner {
+      position: absolute;
+      top: 73.5px;
+      width: 31px;
+      height: 164px;
+      background-image: url(https://sb.monetate.net/img/1/162/236384.png) !important;
+      background-repeat: no-repeat;
+    }
+
+    #monetate_endcap_7d1c89cd_0.monetate-endcap.vertical .right {
+      width: 31px;
+      height: 311px;
+      right: 0px;
+      top: 0px;
+      position: absolute;
+      background-color: #FFF;
+      z-index: 1;
+    }
+
+    #monetate_endcap_7d1c89cd_0.monetate-endcap.vertical .right .inner {
+      position: absolute;
+      top: 73.5px;
+      width: 31px;
+      height: 164px;
+      background-image: url(https://sb.monetate.net/img/1/162/431606.png) !important;
+      background-repeat: no-repeat;
+    }
+
+    #monetate_endcap_7d1c89cd_0.monetate-endcap.vertical .item {
+      height: 194px;
+      display: block;
+      padding: 7px 5px 7px 5px;
+    }
+
+    #monetate_endcap_7d1c89cd_0.monetate-endcap.vertical .item .image {
+      max-width: 182px;
+      max-height: 70%;
+    }
+
+    #monetate_endcap_7d1c89cd_0.monetate-endcap .top, #monetate_endcap_7d1c89cd_0.monetate-endcap .bottom, #monetate_endcap_7d1c89cd_0.monetate-endcap .left, #monetate_endcap_7d1c89cd_0.monetate-endcap .right, #monetate_endcap_7d1c89cd_0.monetate-endcap #back-button, #monetate_endcap_7d1c89cd_0.monetate-endcap #forward-button, #monetate_endcap_7d1c89cd_0.monetate-endcap.outer {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+    }
+
+    #monetate_endcap_7d1c89cd_0.horizontal {
+      clear: both;
+    }
+
+    #monetate_endcap_7d1c89cd_0.horizontal .mpg-item-link {
+      border: 0 !important;
+    }
+
+    #monetate_endcap_7d1c89cd_0.horizontal .mpg-image {
+      width: 100px !important;
+      float: none !important;
+    }
+
+    #monetate_endcap_7d1c89cd_0.horizontal br {
+      display: none;
+    }
+
+    #monetate_endcap_7d1c89cd_0.horizontal .mpg-text {
+      width: 100%;
+      max-width: 150px;
+      margin: 10px auto 0;
+      float: none !important;
+    }
+
+    #monetate_endcap_7d1c89cd_0.horizontal .mpg-text span {
+      display: block;
+    }
+
+    #monetate_endcap_7d1c89cd_0.horizontal .mpg-name {
+      min-height: 0 !important;
+      margin-bottom: 10px;
+    }
+
+    #monetate_endcap_7d1c89cd_0.horizontal .mpg-text .mpg-reviews {
+      margin: 2px 0 4px;
+      display: none !important;
+    }
+
+    #mt_slideshow_cb9443e_pagination {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      text-align: center;
+      z-index: 5;
+      position: absolute;
+      bottom: 0;
+    }
+
+    #mt_slideshow_cb9443e_pagination li {
+      display: inline-block;
+      z-index: 5;
+      margin-right: 5px;
+      width: 10px;
+      height: 10px;
+      background-color: black;
+      opacity: .6;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 8px;
+      height: 8px;
+      background-color: grey;
+    }
+
+    #mt_slideshow_cb9443e_pagination li.active, #mt_slideshow_cb9443e_pagination li:active, #mt_slideshow_cb9443e_pagination li:hover {
+      width: 8px;
+      height: 8px;
+      background-color: black;
+    }
+
+    #mt_slideshow_cb9443e_pagination li a {
+      display: block;
+      text-indent: -9999px;
+    }
+
+    .slideshowContainer {
+      padding-bottom: 15px;
+    }
+  </style>
+
+  <meta name="msvalidate.01" content="303C5EF8BF235D274C1484846E6C15EC">
+  <title>Boscov's Online - Your Full Service Department Store</title>
+  <meta name="description"
+        content="Shop Boscovs.com for great values on Apparel and Shoes for the entire family, Handbags, Cosmetics, Jewelry, Domestics, Small Appliances and Home Accessories.">
+  <meta name="keywords"
+        content="Shoes, Cosmetics, Jewelry, Outlet, Gift Cards, Store Locator, Ads, Boscov’s Charge, Accessories, Free Shipping, Home, Value, Apparel, Department Stores, Gift Registry, Clothes, Fashion, Clothing, Style, Trends, Misses, Ladies, Women&#39;s, Men&#39;s, Juniors, Kids, Toys">
+  <meta name="google-site-verification" content="9KThZmKvgUZshFnTPTo-ketI8SDr3J317nv7jj-AfgU">
+  <meta name="msvalidate.01" content="303C5EF8BF235D274C1484846E6C15EC">
+
+  <link rel="stylesheet" type="text/css" href="https://www.boscovs.com/store/content/css/bootstrap/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="./home_files/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="./home_files/style-wide.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="./home_files/print.css" media="print">
+  <link rel="stylesheet" type="text/css" href="./home_files/homepage.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="./home_files/jquery-ui-1.10.3.custom.css" media="screen">
+  <link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.boscovs.com/">
+
+  <!-- Begin Monetate ExpressTag Sync v8.1. Place at start of document head. DO NOT ALTER. -->
+  <link rel="dns-prefetch" href="https://f.monetate.net/">
+  <link rel="dns-prefetch" href="https://sb.monetate.net/">
+  <script src="./home_files/rules-p-B3qKHhwpVpt-w.js" async=""></script>
+  <script type="text/javascript" async="" src="./home_files/ec.js"></script>
+  <script src="./home_files/106208189818293" async=""></script>
+  <script src="./home_files/552598415121519" async=""></script>
+  <script type="text/javascript" async="" charset="utf-8" src="./home_files/fbevents.js" id="utag_232"></script>
+  <script src="./home_files/CobrowseJS.ashx" id="cobrowsescript"
+          data-inputevents="{&quot;ctrl-13&quot;:&quot;startSession&quot;}" data-groupid="19785" data-site="production"
+          type="text/javascript" async=""></script>
+  <script type="text/javascript" async="" charset="utf-8" src="./home_files/quant.js" id="utag_205"></script>
+  <script type="text/javascript" async="" charset="utf-8" src="./home_files/concierge-client.js" data-concierge="1"
+          data-concierge-host="gomoxie.solutions" id="utag_197"></script>
+  <script type="text/javascript" async="" charset="utf-8" src="./home_files/fbevents.js" id="utag_149"></script>
+  <script type="text/javascript" src="./home_files/sidecar_boscovs.js"></script>
+  <script type="text/javascript" async="" charset="utf-8" src="./home_files/analytics.js"
+          id="tealium-tag-7110"></script>
+  <script type="text/javascript" async="" charset="utf-8" src="./home_files/f.txt" id="utag_220"></script>
+  <script type="text/javascript" async="" charset="utf-8" src="./home_files/bat.js" id="utag_195"></script>
+  <script src="./home_files/utag.js" type="text/javascript" async=""></script>
+  <script src="./home_files/jquery-ui-1.9.2.min.js"></script>
+  <script src="./home_files/jquery.jsonp-2.1.2.min.js"></script>
+  <script src="./home_files/jquery-jtemplates-0.8.1.min.js"></script>
+  <script src="./home_files/plugins.js"></script>
+  <script src="./home_files/jquery.multiselect.min.js"></script>
+  <script src="./home_files/superfish.js"></script>
+  <script type="text/javascript" src="./home_files/custom.js" charset="utf-8" async=""></script>
+  <script type="text/javascript">var monetateT = new Date().getTime();</script>
+  <script type="text/javascript" src="./home_files/entry.js"></script>
+  <!-- End Monetate tag. -->
+
+  <script type="text/javascript" src="./home_files/modernizr-2.5.3.min.js"></script>
+  <script type="text/javascript" src="./home_files/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="./home_files/bootstrap.js"></script>
+  <script type="text/javascript" src="./home_files/homepage-env.js"></script>
+  <script type="text/javascript" src="./home_files/jsviews.min.js"></script>
+  <script type="text/javascript" src="./home_files/linkParams.js"></script>
+  <script type="text/javascript" src="./home_files/homepage.js"></script>
+  <script type="text/javascript" src="./home_files/tealium.js"></script>
+
+  <script type="application/ld+json">
+{
+"@context" : "http://schema.org",
+
+"@type" : "WebSite",
+"name" : "Boscovs",
+"url" : "https://www.boscovs.com/",
+
+"potentialAction" : {
+"@type" : "SearchAction",
+"target" : "https://www.boscovs.com/search/go?w={search_term}",
+
+"query-input" : "required name=search_term"
+}
+}
+
+  </script>
+
+  <script type="text/javascript" src="./home_files/623939382-0" charset="utf-8" async=""></script>
+  <link type="text/css" rel="stylesheet" href="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content.css">
+  <link href="./home_files/sli-rac.3.12.css" rel="stylesheet" type="text/css" media="all">
+  <link href="./home_files/sli-rac.custom.css" rel="stylesheet" type="text/css" media="all">
+  <script src="./home_files/sli-rac.stub.local.3.12.js"></script>
+  <script type="text/javascript" src="./home_files/bestsellers" charset="utf-8" defer=""></script>
+  <script type="text/javascript" async="" charset="utf-8" src="./home_files/utag.6.js"
+          id="utag_boscovs.main_6"></script>
+  <script type="text/javascript" async="" charset="utf-8" src="./home_files/utag.34.js"
+          id="utag_boscovs.main_34"></script>
+  <script type="text/javascript" async="" charset="utf-8" src="./home_files/utag.220.js"
+          id="utag_boscovs.main_220"></script>
+  <script type="text/javascript" async="" charset="utf-8" src="./home_files/utag.121.js"
+          id="utag_boscovs.main_121"></script>
+  <script type="text/javascript" async="" charset="utf-8" src="./home_files/utag.149.js"
+          id="utag_boscovs.main_149"></script>
+  <script type="text/javascript" async="" charset="utf-8" src="./home_files/utag.195.js"
+          id="utag_boscovs.main_195"></script>
+  <script type="text/javascript" async="" charset="utf-8" src="./home_files/utag.197.js"
+          id="utag_boscovs.main_197"></script>
+  <script type="text/javascript" async="" charset="utf-8" src="./home_files/utag.205.js"
+          id="utag_boscovs.main_205"></script>
+  <script type="text/javascript" async="" charset="utf-8" src="./home_files/utag.208.js"
+          id="utag_boscovs.main_208"></script>
+  <script type="text/javascript" async="" charset="utf-8" src="./home_files/utag.157.js"
+          id="utag_boscovs.main_157"></script>
+  <script type="text/javascript" async="" charset="utf-8" src="./home_files/utag.232.js"
+          id="utag_boscovs.main_232"></script>
+  <script src="./home_files/f(1).txt"></script>
+  <style type="text/css" id="concierge-style-Desktop">
+    #concierge {
+      text-align: left;
+    }
+
+    #concierge td {
+      vertical-align: middle;
+      text-align: left;
+      font-weight: normal;
+    }
+
+    #concierge table {
+      border: 0;
+      border-collapse: collapse;
+      border-spacing: 0;
+      empty-cells: show;
+      font-size: 100%;
+    }
+
+    #concierge * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      transition: none;
+    }
+
+    /* YUI 3.5.0 reset.css (http://developer.yahoo.com/yui/3/cssreset/) - http://cssreset.com */
+    #concierge div,
+    #concierge dl,
+    #concierge dt,
+    #concierge dd,
+    #concierge ul,
+    #concierge ol,
+    #concierge li,
+    #concierge h1,
+    #concierge h2,
+    #concierge h3,
+    #concierge h4,
+    #concierge h5,
+    #concierge h6,
+    #concierge pre,
+    #concierge code,
+    #concierge form,
+    #concierge fieldset,
+    #concierge legend,
+    #concierge input,
+    #concierge textarea,
+    #concierge p,
+    #concierge blockquote,
+    #concierge th,
+    #concierge tr,
+    #concierge td {
+      margin: 0;
+      padding: 0;
+      border-bottom: none;
+      border-right: none;
+      border-left: none;
+      border-top: none
+    }
+
+    #concierge table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      background-color: transparent
+    }
+
+    #concierge #concierge-widgets table {
+      width: 100%;
+      height: 100%
+    }
+
+    #concierge li {
+      width: 100%;
+      height: 100%
+    }
+
+    #concierge .con_tab_text {
+      color: #ffffff;
+      line-height: 1.5
+    }
+
+    #concierge fieldset,
+    #concierge img {
+      border: 0
+    }
+
+    #concierge address,
+    #concierge caption,
+    #concierge cite,
+    #concierge code,
+    #concierge dfn,
+    #concierge em,
+    #concierge strong,
+    #concierge th,
+    #concierge var {
+      font-style: normal;
+      font-weight: normal
+    }
+
+    #concierge ol,
+    #concierge ul {
+      list-style: none
+    }
+
+    #concierge caption,
+    #concierge th {
+      text-align: left
+    }
+
+    #concierge h1 {
+      font-family: Droid, sans-serif
+    }
+
+    ,
+    #concierge h2,
+    #concierge h3,
+    #concierge h4,
+    #concierge h5,
+    #concierge h6 {
+      font-size: 100%;
+      font-weight: normal
+    }
+
+    #concierge q:before,
+    #concierge q:after {
+      content: ''
+    }
+
+    #concierge abbr,
+    #concierge acronym {
+      border: 0;
+      font-variant: normal
+    }
+
+    #concierge sup {
+      vertical-align: text-top
+    }
+
+    #concierge sub {
+      vertical-align: text-bottom
+    }
+
+    #concierge input,
+    #concierge textarea,
+    #concierge select {
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: inherit
+    }
+
+    #concierge input,
+    #concierge textarea,
+    #concierge select {
+      *font-size: 100%
+    }
+
+    #concierge legend {
+      color: #000
+    }
+
+    #concierge {
+      position: fixed;
+      height: 50px;
+      width: 50px;
+      z-index: 1000000;
+      font-family: Source Sans Pro, Helvetica Neue, Arial;
+      font-size: 14px;
+      -webkit-tap-highlight-color: rgba(255, 0, 0, 0); /* To avoid flickering effect in Ipad */
+    }
+
+    #concierge.position-method-javascript {
+      position: absolute;
+    }
+
+    #concierge path {
+      stroke: currentColor;
+      fill: currentColor;
+    }
+
+    #concierge g {
+      stroke: currentColor;
+      fill: currentColor;
+    }
+
+    #concierge polygon {
+      stroke: currentColor;
+      fill: currentColor;
+    }
+
+    #concierge .con-icon {
+      position: relative;
+      top: 24%;
+      left: 24%;
+      width: 52%;
+      height: 52%;
+      color: #FFFFFF;
+    }
+
+    #concierge .con-icon-placeholder {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50px;
+      height: 50px;
+      opacity: 0;
+    }
+
+    #concierge #concierge-tab.con-pressed {
+      box-shadow: inset rgba(0, 0, 0, 0.4) 0 10px 20px;
+    }
+
+    #concierge.con-top #concierge-tab.con-presset {
+      top: 0;
+    }
+
+    #concierge.con-bottom #concierge-tab.con-presset {
+      bottom: 0;
+    }
+
+    #concierge #concierge-tab {
+      display: block;
+      position: absolute;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      z-index: 100002;
+      cursor: pointer;
+      color: #FFFFFF;
+      background-color: #000093;
+      box-shadow: rgba(0, 0, 0, 0.3) 2px 4px 2px;
+      /*box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px;*/
+    }
+
+    #concierge #concierge-tab:focus,
+    #concierge-widgets ul li:focus {
+      outline: none;
+    }
+
+    #concierge.con-top #concierge-tab {
+      top: 0;
+    }
+
+    #concierge.con-bottom #concierge-tab {
+      bottom: 0;
+    }
+
+    #concierge {
+      -webkit-user-select: none;
+    }
+
+    #concierge.single-channel #concierge-tab {
+      display: none;
+    }
+
+    #concierge.single-channel.con-top #concierge-widgets {
+      top: 0;
+    }
+
+    #concierge.single-channel.con-bottom #concierge-widgets {
+      bottom: 0;
+    }
+
+    #concierge.single-channel #concierge-widgets ul li {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    #concierge-widgets {
+      position: absolute;
+      right: 0;
+      width: 50px;
+      z-index: 100001;
+      -webkit-tap-highlight-color: rgba(255, 0, 0, 0); /* To avoid flickering effect in Ipad */
+    }
+
+    #concierge.con-top #concierge-widgets {
+      top: 50px;
+    }
+
+    #concierge.con-bottom #concierge-widgets {
+      bottom: 50px;
+    }
+
+    #concierge-widgets ul {
+      list-style-type: none;
+      padding: 0;
+      position: relative;
+    }
+
+    #concierge-widgets ul li {
+      position: relative;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      z-index: 100001;
+      color: #FFFFFF;
+    }
+
+    #concierge.con-top #concierge-widgets.con-animating ul li:first-of-type {
+      margin-top: 0px;
+    }
+
+    #concierge-widgets ul li .con-icon-wrapper {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      z-index: 100001;
+      cursor: pointer;
+      background-color: #000093;
+      box-shadow: rgba(0, 0, 0, 0.2) 2px 4px 2px;
+    }
+
+    #concierge-widgets ul li.con-pressed .con-icon-wrapper {
+      top: 1px;
+      opacity: .6;
+      box-shadow: inset rgba(0, 0, 0, 0.4) 0 10px 20px;
+    }
+
+    #concierge-widgets.con-animating {
+      overflow-y: hidden;
+    }
+
+    #conciege.con-top #concierge-widgets.con-animating {
+      top: 20px;
+    }
+
+    #conciege.con-bottom #concierge-widgets.con-animating {
+      bottom: 20px;
+    }
+
+    #concierge.con-closed #concierge-widgets {
+      display: none;
+    }
+
+    #concierge.con-open #concierge-widgets {
+      display: block;
+    }
+
+    #con-notification.con-active {
+      display: inline-block;
+      width: 300px;
+    }
+
+    #con-notification.con-inactive {
+      display: none;
+    }
+
+    #con-notification div.con-notification-content {
+      margin: 10px;
+    }
+
+    #con-notification div.con-notification-icon {
+      border-radius: 32px;
+      height: 64px;
+      width: 64px;
+      float: left;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+
+    #con-notification div.con-notification-calltoaction {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #000093;
+      cursor: pointer;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    #con-notification div.con-notification-helptext {
+      /* display: none;*/
+      position: absolute;
+      left: -10000px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+
+    #concierge #con-notification {
+      position: absolute;
+      vertical-align: top;
+      /*top: 100px;*/
+      right: 75px;
+      width: 300px;
+      border: solid 1px #000093;
+      border-radius: 4px;
+      background-color: #ffffff;
+      z-index: 1000000;
+    }
+
+    #concierge.con-top #con-notification {
+      top: 0;
+    }
+
+    #concierge.con-bottom #con-notification {
+      bottom: 0;
+    }
+
+    #concierge #con-notification .con-notch {
+      position: absolute;
+      right: -10px;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 10px solid #000093;
+    }
+
+    #concierge.con-top #con-notification .con-notch {
+      top: 15px;
+    }
+
+    #concierge.con-bottom #con-notification .con-notch {
+      bottom: 15px;
+    }
+
+    #concierge #con-notification .con-notch-inner {
+      position: absolute;
+      top: -10px;
+      right: 1px;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 10px solid #ffffff;
+    }
+
+    #con-notification .concierge-notification-title {
+      margin: 3px;
+      height: 40px;
+      line-height: 40px;
+      vertical-align: middle;
+      padding-left: 7px;
+      padding-right: 30px;
+      background-color: #000093;
+      color: #FFFFFF;
+      font-size: 14px;
+      text-transform: none;
+      background-image: none;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    #con-notification .con-x {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      width: 50px;
+      height: 50px;
+    }
+
+    #con-notification .con-x svg {
+      width: 16px;
+      height: 16px;
+      color: #FFFFFF;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+
+    #concierge #concierge-widget-area .con-notch {
+      position: absolute;
+      right: -12px;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 10px solid #000093;
+    }
+
+    #concierge.con-top #concierge-widget-area .con-notch {
+      top: 15px;
+    }
+
+    #concierge.con-bottom #concierge-widget-area .con-notch {
+      bottom: 15px;
+    }
+
+    #concierge #concierge-widget-area .con-notch-inner {
+      position: absolute;
+      top: -10px;
+      right: 2px;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 10px solid #ffffff;
+    }
+
+    #concierge #concierge-widget-area {
+      position: absolute;
+      right: 75px;
+      height: 454px;
+      width: 308px;
+      display: none;
+      padding: 2px;
+      z-index: 100000;
+
+      background-color: #ffffff;
+
+      border: solid 2px #000093;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px;
+
+      -webkit-border-radius: 5px 5px 5px 5px;
+      -moz-border-radius: 5px 5px 5px 5px;
+      -o-border-radius: 5px 5px 5px 5px;
+      border-radius: 5px 5px 5px 5px;
+    }
+
+    #concierge.hide-moxie #concierge-widget-area {
+      height: 410px;
+    }
+
+    #concierge.con-top #concierge-widget-area {
+      top: 0;
+    }
+
+    #concierge.con-bottom #concierge-widget-area {
+      bottom: 0;
+    }
+
+    #concierge #concierge-widget-area.con-open {
+      display: inline-block;
+    }
+
+    #concierge .con-notification-body {
+      color: #000;
+      word-wrap: break-word;
+    }
+
+    #concierge #concierge-widget-area > .concierge-widget > .concierge-widget-header .con-widget-title {
+      font-size: 14px;
+    }
+
+    #concierge #concierge-widget-area > .concierge-widget > .concierge-widget-header .con-widget-icon {
+      width: 16px;
+      height: 16px;
+      top: 11px;
+      left: 2px;
+    }
+
+    #concierge .widget-frame-wrapper-scroll {
+      bottom: 20px;
+      position: absolute;
+      top: 40px;
+    }
+
+    #concierge.hide-moxie .widget-frame-wrapper-scroll {
+      bottom: 0px;
+    }
+
+    #concierge .concierge-widget[data-widget=email] .widget-frame-wrapper-scroll {
+      -webkit-overflow-scrolling: touch;
+    }
+
+    #concierge-widget-area .widget-content {
+      height: 100%;
+    }
+
+    #concierge #concierge-shared-storage {
+      width: 1px;
+      height: 1px;
+      visibility: hidden;
+    }
+
+    /*bumps out the body and CTA text to clear the notification-icon.*/
+    #concierge div.con-notification-icon ~ div {
+      margin-left: 74px;
+    }
+
+    /*Checks for the presense of the notification-icon and, if it's empty, removes margin from the body and CTA text.*/
+    #concierge div.con-notification-icon:empty ~ div {
+      margin-left: 0;
+    }
+
+    #concierge-widget-area > .concierge-widget > .concierge-widget-header .con-close-widget {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 16px;
+      height: 16px;
+      color: #FFFFFF;
+    }
+
+    #concierge #concierge-tab.highlight {
+      outline: rgba(0, 60, 255, 0.25) solid 1px !important;
+    }
+
+    #concierge .concierge-alert {
+      /* display: none;*/
+      position: absolute;
+      left: -10000px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+
+    #concierge-widget-area .concierge-widget {
+      display: none;
+      position: relative;
+      height: 100%;
+    }
+
+    #concierge-widget-area .concierge-widget.con-active {
+      display: block;
+    }
+
+    #concierge-widget-area > .concierge-widget > .widget-content {
+      position: relative;
+      height: calc(100% - 60px);
+      width: 100%;
+    }
+
+    #concierge-widget-area .widget-content {
+      width: 100%;
+    }
+
+    #concierge-widget-area > .concierge-widget > .concierge-widget-header {
+      position: relative;
+      width: 100%;
+      height: 40px;
+      z-index: 1;
+      background-color: #000093;
+    }
+
+    #concierge-widget-area > .concierge-widget > .concierge-widget-header .con-widget-title-section {
+      position: relative;
+      display: inline-block;
+      margin-left: 10px;
+      padding-right: 50px;
+    }
+
+    #concierge-widget-area > .concierge-widget > .concierge-widget-header .con-widget-title-section:focus {
+      padding: 0;
+    }
+
+    #concierge-widgets ul li.highlight {
+      outline: rgba(0, 60, 255, 0.25) solid 1px;
+      padding: 0;
+    }
+
+    #concierge-widget-area > .concierge-widget > .concierge-widget-header .con-widget-title {
+      padding-top: 4px;
+      height: 32px;
+      line-height: 32px;
+      vertical-align: top;
+      background-color: #000093;
+      color: #FFFFFF;
+      font-size: 14px;
+      font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+      text-align: left;
+      display: inline-block;
+    }
+
+    #concierge-widget-area > .concierge-widget > .concierge-widget-header .con-widget-icon {
+      width: 20px;
+      height: 20px;
+      color: #FFFFFF;
+      display: inline-block;
+      position: relative;
+      top: 9px;
+    }
+
+    #concierge-widget-area > .concierge-widget > .concierge-widget-header .con-widget-icon svg {
+      width: 100%;
+      height: 100%;
+      stroke-width: 0;
+    }
+
+    #concierge-widget-area > .concierge-widget > .concierge-widget-header .con-widget-icon svg polygon {
+      fill: #FFFFFF;
+    }
+
+    #concierge-widget-area > .concierge-widget > .concierge-widget-header .con-widget-icon:empty {
+      display: none;
+    }
+
+    #concierge-widget-area > .concierge-widget > .concierge-widget-header .con-close-area {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      height: 100%;
+      width: 50px;
+    }
+
+    #concierge-widget-area > .concierge-widget > .concierge-widget-header .con-close-widget polygon {
+      fill: #FFFFFF;
+    }
+
+    #concierge-widget-area .concierge-widget-footer {
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      height: 20px;
+      text-align: center;
+      overflow-y: hidden;
+      line-height: 16px;
+      background-color: #000093;
+    }
+
+    #concierge-widget-area .concierge-widget-footer svg {
+      height: 14px;
+      width: 84px;
+      color: #FFFFFF;
+      margin-top: 3px;
+    }
+
+    #concierge-widget-area .powered {
+      color: #FFFFFF;
+      font-size: 7.5pt;
+      vertical-align: top;
+    }
+
+    #concierge-widget-area .clickable-title {
+      cursor: pointer;
+    }
+
+    #concierge-widget-area h1.concierge-widget-header {
+      line-height: 18px;
+      font-size: 14px;
+    }
+
+    #concierge #concierge-widget-area {
+      width: 358px !important;
+    }
+
+    #concierge .widget-frame-wrapper-scroll {
+      width: 100% !important;
+    }
+  </style>
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>
